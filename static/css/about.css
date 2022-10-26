@@ -1,0 +1,214 @@
+body {
+    font-family: 'Roboto';font-size: 16px;
+}
+
+nav{
+    font-size: medium;
+}
+nav ul{
+    padding-left: 80vw;
+}
+.aboutus-section {
+    padding: 90px 0;
+}
+.aboutus-title {
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 39px;
+    padding: 0 0 11px;
+    position: relative;
+    text-transform: uppercase;
+    color: #000;
+   
+}
+.aboutus-title::after {
+    background: #1b1869 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 54px;
+}
+.aboutus-text {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0 0 35px;
+}
+
+a:hover, a:active {
+    color: #ffb901;
+    text-decoration: none;
+    outline: 0;
+}
+.aboutus-more {
+    border: 1px solid #1b1869;
+    border-radius: 25px;
+    color: #1b1869;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+.feature .feature-box .iconset {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    position: relative;
+    width: 18%;
+}
+.feature .feature-box .iconset::after {
+    background:#1b1869 none repeat scroll 0 0;
+    content: "";
+    height: 150%;
+    left: 43%;
+    position: absolute;
+    top: 100%;
+    width: 1px;
+}
+
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+
+
+.feature .feature-box .feature-content {
+    float: left;
+    padding-left: 28px;
+    width: 78%;
+}
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+.feature .feature-box .feature-content p {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+}
+.icon {
+    color :#1b1869;
+    padding:0px;
+    font-size:40px;
+    border: 1px solid #1b1869;
+    border-radius: 100px;
+    color:#1b1869;
+    font-size: 28px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.Team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #460b2d, #912847);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.profile-card {
+    width: 200px;
+    height: 200px;
+    background: rgb(223, 184, 196);
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+    margin:auto;
+    position: relative;
+}
+
+.profile-card:hover {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.profile-card img {
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    z-index: 10;
+}
+
+.profile-card:hover img {
+    transform: translateY(-60px);
+}
+
+.Team img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+}
+
+.profile-card:hover img {
+    border-radius: 10px;
+}
+
+.caption {
+    text-align: center;
+    transform: translateY(-70px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.profile-card:hover .caption {
+    opacity: 1;
+}
+
+.caption h3 {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.caption p {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: -25px;
+    font-size: 15px;
+    color: #0c52a1;
+    
+}
+
+.social-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+    top: -35px;
+}
+
+@media only screen and (max-width: 700px) {
+    .profile-card {
+        margin-top: 45px;
+    }
+}
+
+.Team h1{
+    padding:5px ;
+    /* font-weight: 400; */
+    font-size: 60px;
+    color: rgb(185, 200, 236);
+}

@@ -1,0 +1,179 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>Audio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="../static/css/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    {% endblock %}
+
+{% block body %}
+    <!-- ------------------------------------------------------------------------------------------------ -->
+
+    <nav class="navbar">
+      <div class="container">
+      
+        <div class="navbar-header">
+        <button class="navbar-toggler" data-toggle="open-navbar1">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+              <a class="image"  href="#">
+                  <img src="../static/img/Daco_1145248.png" width="100" height="42" class="d-inline-block align-top" alt="">
+                  </a>
+        <a href="http://127.0.0.1:5000/">
+          <h4>WV<span>FRM</span></h4>
+        </a>
+        </div>
+      
+        <div class="navbar-menu" id="open-navbar1">
+        <ul class="navbar-nav">
+          <li class="active"><a href="http://127.0.0.1:5000/">Home</a></li>
+                  <li><a href="http://127.0.0.1:5000/about">About</a></li>
+                  <li><a href="http://127.0.0.1:5000/tryout">TryOut</a></li>
+                  <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
+        </ul>
+        </div>
+      </div>
+      </nav>
+      
+  
+      
+    <h2>{{displayName}}</h2>
+    <h2>{{trkID}}</h2>
+    <h2>{{trkPop}}</h2>
+    <!-- <h2>https://open.spotify.com/embed/track/{{trkID}}?utm_source=generator</h2> -->
+
+    
+    <iframe style="border-radius:12px" 
+    src = "https://open.spotify.com/embed/track/{{trkID}}?utm_source=generator"
+    
+    width="50%" 
+    height="152" 
+    frameBorder="0" 
+    allowfullscreen="" 
+    allow="autoplay; 
+    clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy">
+    </iframe>
+
+
+    <br><br><br>
+    <div>
+        <form action="/stat" method="POST">
+        <input type="hidden" name="hoo" value="" id="hoo" />
+        <input class="btn" type="submit" value="PREDICT">
+        </form>
+    </div>
+    <br><br><br>
+<!-- -------------------------------------------------------------------------------------------------------------- -->
+    <section id="new_release">
+        <div class="heading">
+            <h1 >Similar Songs</h1>
+        </div>
+        
+    <div class="card-deck">
+        <div class="row">
+          
+           <!-- card 0 -->
+        <div class="col-12 col-md-6 col-lg-2" id="card0">
+          <div class="card">
+            <a href="">
+            <img class="card-img-top" src="..." alt="Card image cap">
+          </a>
+            <div class="card-body">
+              <h5 class="card-title">TrackName</h5>
+              <p class="card-text">ArtistName</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"></small>
+            </div>
+            </div>
+          </div>
+            <!-- card 1 -->
+        <div class="col-12 col-md-6 col-lg-2" id="card1">
+        <div class="card">
+          <a href="">
+          <img class="card-img-top" src="..." alt="Card image cap">
+        </a>
+          <div class="card-body">
+            <h5 class="card-title">TrackName</h5>
+            <p class="card-text">ArtistName</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+          </div>
+          </div>
+        </div>
+            <!-- card 2 -->
+            <div class="col-12 col-md-6 col-lg-2" id="card2">
+              <div class="card">
+                <a href="">
+                <img class="card-img-top" src="..." alt="Card image cap">
+              </a>
+                <div class="card-body">
+                  <h5 class="card-title">TrackName</h5>
+                  <p class="card-text">ArtistName</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"></small>
+                </div>
+                </div>
+              </div>
+        <!-- card 3 -->
+        <div class="col-12 col-md-6 col-lg-2" id="card3">
+          <div class="card">
+            <a href="">
+            <img class="card-img-top" src="..." alt="Card image cap">
+          </a>
+            <div class="card-body">
+              <h5 class="card-title">TrackName</h5>
+              <p class="card-text">ArtistName</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"></small>
+            </div>
+            </div>
+          </div>     
+        <!-- card 4 -->
+        <div class="col-12 col-md-6 col-lg-2" id="card4">
+            <div class="card">
+              <a href="">
+              <img class="card-img-top" src="..." alt="Card image cap">
+            </a>
+              <div class="card-body">
+                <h5 class="card-title">TrackName</h5>
+                <p class="card-text">ArtistName</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"></small>
+              </div>
+              </div>
+            </div>   
+        <!-- card 5 -->
+        <div class="col-12 col-md-6 col-lg-2" id="card5">
+            <div class="card">
+              <a href="">
+              <img class="card-img-top" src="..." alt="Card image cap">
+            </a>
+              <div class="card-body">
+                <h5 class="card-title">TrackName</h5>
+                <p class="card-text">ArtistName</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"></small>
+              </div>
+              </div>
+            </div>  
+      
+        </div>
+        </div>
+        </section>
+
+        <script src="../static/js/navbar.js"></script>
+    <script src="../static/js/audio.js"></script>
+    <script src="../static/js/suggestions.js"></script>
+{% endblock %}

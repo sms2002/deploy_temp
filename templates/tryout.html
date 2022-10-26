@@ -1,0 +1,167 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>TryOut</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/navbar.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/navbar.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+{% endblock %}
+
+{% block body %}
+<nav class="navbar">
+  <div class="container">
+  
+    <div class="navbar-header">
+    <button class="navbar-toggler" data-toggle="open-navbar1">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+          <a class="image"  href="#">
+              <img src="../static/img/Daco_1145248.png" width="100" height="42" class="d-inline-block align-top" alt="">
+              </a>
+    <a href="http://127.0.0.1:5000/">
+      <h4>WV<span>FRM</span></h4>
+    </a>
+    </div>
+  
+    <div class="navbar-menu" id="open-navbar1">
+    <ul class="navbar-nav">
+      <li><a href="http://127.0.0.1:5000/">Home</a></li>
+                  <li><a href="http://127.0.0.1:5000/about">About</a></li>
+                  <li class="active"><a href="http://127.0.0.1:5000/tryout">TryOut</a></li>
+                  <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
+    </ul>
+    </div>
+  </div>
+  </nav>
+    
+
+
+    <h1>TryOut</h1>
+
+   
+
+    <div class="form-group mt-4 text-center">
+        <label id="1"><h4>Acousticness</h4></label>
+        <br>
+        <input type="text" value="50" id="textTRY1">
+        <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY1">
+    </div>
+
+    <div class="form-group mt-4 text-center">
+        <label id="2"><h4>Acousticness</h4></label>
+        <br>
+        <input type="text" value="50" id="textTRY2">
+        <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY2">
+    </div>
+
+    <div class="form-group mt-4 text-center">
+        <label id="3"><h4>Acousticness</h4></label>
+        <br>
+        <input type="text" value="50" id="textTRY3">
+        <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY3">
+    </div>
+
+    <div class="form-group mt-4 text-center">
+        <label id="4"><h4>Acousticness</h4></label>
+        <br>
+        <input type="text" value="50" id="textTRY4">
+        <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY4">
+    </div>
+
+    <div class="form-group mt-4 text-center">
+        <label id="5"><h4>Acousticness</h4></label>
+        <br>
+        <input type="text" value="50" id="textTRY5">
+        <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY5">
+    </div>
+
+    <div class="form-group mt-4 text-center">
+        <label id="6"><h4>Acousticness</h4></label>
+        <br>
+        <input type="text" value="50" id="textTRY6">
+        <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY6">
+    </div>
+
+    <div class="form-group mt-4 text-center">
+        <label id="7"><h4>Acousticness</h4></label>
+        <br>
+        <input type="text" value="50" id="textTRY7">
+        <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY7">
+    </div>
+
+      <div>
+        <label id="6"><h4>Key</h4></label>
+      <br>
+      <form id="mainForm" name="mainForm">
+        <input type="radio" name="rads" value="0"> 0 </input>
+        <input type="radio" name="rads" value="1"> 1 </input>
+        <input type="radio" name="rads" value="2"> 2 </input>
+        <input type="radio" name="rads" value="3"> 3 </input>
+        <input type="radio" name="rads" value="4"> 4 </input>
+        <input type="radio" name="rads" value="5"> 5 </input>
+        <input type="radio" name="rads" value="6"> 6 </input>
+        <input type="radio" name="rads" value="7"> 7 </input>
+        <input type="radio" name="rads" value="8"> 8 </input>
+        <input type="radio" name="rads" value="9"> 9 </input>
+        <input type="radio" name="rads" value="10"> 10 </input>
+        <input type="radio" name="rads" value="11"> 11 </input>
+    </form>
+      </div>
+
+
+    <br><br>
+      <label id="label_mode"><h4>Mode</h4></label>
+      <br>
+      <form id="mainForm1" name="mainForm1">
+        <input type="radio" name="mod" value="0" >Minor</input>
+        <input type="radio" name="mod" value="1" >Major</input>
+      </form>
+    <br><br>
+
+      <label id="label_exp"><h4>Explicit</h4></label>
+      <br>
+    <form id="mainForm2" name="mainForm2">
+      <input type="radio" name="exp" value="0" >False</input>
+      <input type="radio" name="exp" value="1" >True</input>
+      <br><br>
+  </form>
+
+    <div id="last3">
+      <label id="last1"><h4>Duration</h4></label>
+      <br>
+      <input placeholder="time in milliseconds" required="" type="text" id="l1" value=""></input>
+      <br>
+
+      <label id="last2"><h4>Loudness</h4></label>
+      <br>
+      <input placeholder="loudness" type="text" id="l2" value=""></input>
+      <br>
+
+      <label id="last3"><h4>Tempo</h4></label>
+      <br>
+      <input placeholder="tempo" type="text" id="l3" value=""></input>
+      <br>
+    </div>
+
+
+    <div class="form-group mt-4 text-center">
+        <button type="button" class="btn btn-primary btn-lg center" id="b1_SUBMIT">SUBMIT</button>
+        <button type="button" class="btn btn-secondary btn-lg" id="b2_RESET">RESET</button>
+        <button type="button" class="btn btn-secondary btn-lg" id="b3_RANDOM">RANDOM</button>
+    </div>
+
+    <br><br>
+
+    <script src="../static/js/tryout.js"></script>
+    <script src="../static/js/navbar.js"></script>
+{% endblock %}
