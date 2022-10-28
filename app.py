@@ -204,7 +204,7 @@ def statTRY():
 
 
     #print(x)
-    return render_template('statTRY.html',output=output)
+    return render_template('statTRY.html')
 
 @app.route('/about')
 def about():
