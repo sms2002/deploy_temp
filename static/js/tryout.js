@@ -172,3 +172,5 @@ function getRandomInt(min, max) {
   function getRandomFloat(min, max) {
     return Math.floor(Math.random() * (max*10 - min*10) + min*10)/10;
   }
+
+  console.log('Hey')
