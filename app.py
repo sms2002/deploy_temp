@@ -129,8 +129,6 @@ def tryout():
 
 @app.route('/statTRY',methods=['GET'])
 def statTRY():
-    output = 'hit'
-    return render_template('statTRY.html',output=output)
     details = request.args.get("details")
     print(details)
     yy=json.loads(details)
@@ -177,11 +175,13 @@ def statTRY():
     key_11 = yy["key_11"]
     mode = float(yy["mode"])
 
-    model = joblib.load('statfinmodel.pkl')
-    prediction=model.predict([[acousticness,danceability,duration_ms,energy,explicit,instrumentalness,liveness,loudness,speechiness,tempo,valence,key_1,key_2,key_3,key_4,key_5,key_6,key_7,key_8,key_9,key_10,key_11,mode]])
-    #prediction1=model.predict([[0.603,0.57,232013.0,0.212,0.0,0.0,0.148,-13.877,0.0437,122.513,0.182,1992.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.308159827586207,0.581103448275862,317261.637931034,0.564120689655173,0.092976407586207,0.228284482758621,-11.1943965517241,0.055008620689655,114.127551724138,0.454598275862069,28.9827586206896]])
-    #print(prediction1)
-    output=prediction[0]
+    # model = joblib.load('statfinmodel.pkl')
+    # prediction=model.predict([[acousticness,danceability,duration_ms,energy,explicit,instrumentalness,liveness,loudness,speechiness,tempo,valence,
+    # key_1,key_2,key_3,key_4,key_5,key_6,key_7,key_8,key_9,key_10,key_11,mode]])
+    # #prediction1=model.predict([[0.603,0.57,232013.0,0.212,0.0,0.0,0.148,-13.877,0.0437,122.513,0.182,1992.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.308159827586207,0.581103448275862,317261.637931034,0.564120689655173,0.092976407586207,0.228284482758621,-11.1943965517241,0.055008620689655,114.127551724138,0.454598275862069,28.9827586206896]])
+    # #print(prediction1)
+    # output=prediction[0]
+    output = 'hit'
     print(output)
 
 
