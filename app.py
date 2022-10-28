@@ -129,7 +129,8 @@ def tryout():
 
 @app.route('/statTRY',methods=['GET'])
 def statTRY():
-    return render_template('statTry.html')
+    output = 'hit'
+    return render_template('statTRY.html',output=output)
     details = request.args.get("details")
     print(details)
     yy=json.loads(details)
