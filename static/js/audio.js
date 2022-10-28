@@ -424,7 +424,7 @@ async function enable_track_audio(trkurl,jsonfinaldata)
     
     let route_pass = myJSON + `!@#$%${localStorage.getItem('artistPop')}` + `!@#$%${myJSON1}`;
 
-    console.log(route_pass)
+    // console.log(route_pass)
     input_hidden.value = route_pass
 }
 
