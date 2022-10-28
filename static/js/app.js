@@ -3,9 +3,13 @@ const TOKEN_URL = 'https://accounts.spotify.com/api/token';
 const SEARCH_URL = 'https://api.spotify.com/v1/search'
 const RELEASE_URL = 'https://api.spotify.com/v1/browse/new-releases'
 
-const CLIENT_ID = 'bab0752f938d432f84276ffc54de2ec3';
-const CLIENT_SECRET = 'ad2cd82fd807439088a0b0d9894f7117';
-const REFRESH_TOKEN = 'AQCtBXS6bs9loLFcsbhGVDmuebX9lcJrkqVvnWlzGj9Ro5jegdaQg3L88DWZMk1vjRRm1vAMzU-2hA0cDqUlmIot7f7gi8zGsrWLKh8MaBKsFwFJTRkifD9PFaHVz1d3Y1k'
+// const CLIENT_ID = 'bab0752f938d432f84276ffc54de2ec3';
+// const CLIENT_SECRET = 'ad2cd82fd807439088a0b0d9894f7117';
+// const REFRESH_TOKEN = 'AQCtBXS6bs9loLFcsbhGVDmuebX9lcJrkqVvnWlzGj9Ro5jegdaQg3L88DWZMk1vjRRm1vAMzU-2hA0cDqUlmIot7f7gi8zGsrWLKh8MaBKsFwFJTRkifD9PFaHVz1d3Y1k'
+
+const CLIENT_ID = os.getenv(CLIENT_ID)
+const CLIENT_SECRET = os.getenv(CLIENT_SECRET)
+const REFRESH_TOKEN = os.getenv(REFRESH_TOKEN)
 
 let access_token = null;
 
