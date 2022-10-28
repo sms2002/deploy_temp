@@ -3,10 +3,9 @@ const TOKEN_URL = 'https://accounts.spotify.com/api/token';
 const SEARCH_URL = 'https://api.spotify.com/v1/search'
 const RELEASE_URL = 'https://api.spotify.com/v1/browse/new-releases'
 
-const CLIENT_ID = '65ff8b0793fb4cb5aee5e265bd0e7ae9';
-const CLIENT_SECRET = '5d8fa454c17b43d8ae8db3b6842a6b17';
-const REFRESH_TOKEN = 'AQDZmTL_rX9tOr_F2l91mvMKqV5moE5Q7jdC_5PYhRyJGhfD-34adz4m5rG9QQ-W8ZZDa-PZ0TffYUBXyadcorMrOU9l7bq1b7dA39po6-F3eS0-A66JsR9EG2Xxz80dA-A';
-
+const CLIENT_ID = 'bab0752f938d432f84276ffc54de2ec3';
+const CLIENT_SECRET = 'ad2cd82fd807439088a0b0d9894f7117';
+const REFRESH_TOKEN = 'AQCtBXS6bs9loLFcsbhGVDmuebX9lcJrkqVvnWlzGj9Ro5jegdaQg3L88DWZMk1vjRRm1vAMzU-2hA0cDqUlmIot7f7gi8zGsrWLKh8MaBKsFwFJTRkifD9PFaHVz1d3Y1k'
 
 let access_token = null;
 
