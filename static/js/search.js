@@ -27,7 +27,7 @@ inputBox.onkeyup = (e)=>{
                 for(let i=0; i<search_display.length; i++){
                     if(userData == search_display[i]){
                         set_value(i);
-                        let webLink = `audio?displayName=${search_display[i]}&trkID=${search_trackIDs[i]}&trkPop=${search_trackPopularity[i]}`;
+                        let webLink = `/audio?displayName=${search_display[i]}&trkID=${search_trackIDs[i]}&trkPop=${search_trackPopularity[i]}`;
                         location.href = webLink;
                     }
                 }
