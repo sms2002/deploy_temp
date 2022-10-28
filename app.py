@@ -203,7 +203,7 @@ def statTRY():
 
 
     #print(x)
-    return render_template('statTRY.html',output=output)
+    return render_template('audio.html',output=output)
 
 @app.route('/about')
 def about():
