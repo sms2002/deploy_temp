@@ -86,7 +86,6 @@ b2_RESET.addEventListener('click', function (){
 });
 
 b3_RANDOM.addEventListener('click', function (){
-    b2_RESET.click();
     for(let i=1; i<8; i++){
         el1[i].value = Math.floor(Math.random() * 101);
         el2[i].value = el1[i].value;
