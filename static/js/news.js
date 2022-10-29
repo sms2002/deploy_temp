@@ -54,23 +54,3 @@ function setINITIALnews(){
        }  
    
 }
-
-function callNEWS(){
-    for(let i=0;i<9;i++){
-        let card_id=`cards${i}`;
-        var y = document.getElementById(`${card_id}`);
- 
-        let stringfornews_0 = `storage_0_`;
-        let stringfornews_1 = `storage_1_`;
-        let stringfornews_2 = `storage_2_`;   
- 
-        y.querySelector("h4").innerHTML = localStorage.getItem(`${stringfornews_0}${i}`);
-        y.querySelector("img").src = localStorage.getItem(`${stringfornews_1}${i}`);
-        y.querySelector("img").src = localStorage.getItem(`${stringfornews_2}${i}`);
- 
-        let linkcard_id=`linkcards${i}`;
-        var z = document.getElementById(`${linkcard_id}`);
-        z.querySelector("a").href = localStorage.getItem(`${stringfornews_1}${i}`);
- 
-    }
-}
