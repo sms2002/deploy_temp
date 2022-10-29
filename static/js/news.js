@@ -12,6 +12,7 @@ function setINITIALnews(){
     fetch(curr_url).then((res)=>{
         return res.json()
     }).then((data)=>{
+        console.log(data)
        return data["articles"]
     }).then((articles)=>{
        for(let i=0;i<9;i++){
