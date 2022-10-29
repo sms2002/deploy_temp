@@ -68,7 +68,6 @@ function onPageLoad(){
 
     setINITIALnews();
     
-  
     refreshAccessToken();
     setTimeout(() => {  
         access_token = window.sessionStorage.getItem('access_token');

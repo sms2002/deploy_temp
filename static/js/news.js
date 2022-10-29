@@ -1,31 +1,9 @@
 'use strict';
 
 function setINITIALnews(){    
-    
-    const arr=[]
-    function readTextFile(file)
-    {
-        console.log('a')
-        var rawFile = new XMLHttpRequest();
-        rawFile.open("GET", file, false);
-        rawFile.onreadystatechange = function ()
-        {
-            if(rawFile.readyState === 4)
-            {
-                if(rawFile.status === 200 || rawFile.status == 0)
-                {
-                    var allText = rawFile.responseText;
-                    console.log(allText);
-                    arr.push(allText)
-                }
-            }
-        }
-        rawFile.send(null);
-    }
 
-    readTextFile("./inputNews.txt");
-    console.log(arr)
-    const myArray = arr[0].split("!@#$%");
+    console.log(arrNews)
+    const myArray = arrNews[0].split("!@#$%");
     console.log(myArray.length)
     for(let i=0;i<myArray.length;i++){
         console.log(myArray[i])
