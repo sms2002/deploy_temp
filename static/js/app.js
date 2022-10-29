@@ -66,66 +66,11 @@ function handleAuthorizationResponse() {
 function onPageLoad(){
     console.log('PageLoad');
 
-    if( window.localStorage ){
-        if( !localStorage.getItem('initNEWS') ){
-            setTimeout(()=>{
-                console.log('initNEWS');
-                localStorage['initNEWS'] = true;
-                setINITIALnews();
-            },3000);
-          
-          //setNewsItems
-        }else{
-            console.log('News Already There')
-        }
-
-        // if( !localStorage.getItem('current_time') ){
-        //     console.log('current_time');
-        //     localStorage['current_time'] = new Date();
-        //     console.log(localStorage.getItem('current_time'));
-        //   } 
-        // if( localStorage.getItem('current_time') ){
-        //     console.log('current_time1');
-        //     console.log(localStorage.getItem('current_time'))
-        //     let temp_str = localStorage.getItem('current_time')[8] + localStorage.getItem('current_time')[9];
-        //     let pastDate = temp_str*1;
-        //     console.log(pastDate)
-        //     let temp_var = new Date() + '';
-        //     let temp_str1 = temp_var[8] + temp_var[9];
-        //     let currDate = temp_str1*1;
-        //     console.log(currDate)
-
-        //     if(!(currDate - pastDate)){
-        //         console.log('EXISTING');
-        //         // if manually cleared local storage then set the below comment to run once
-        //         // setINITIALnews();
-        //     }else{
-        //         setTimeout(()=>{
-        //             localStorage.clear();
-        //             setINITIALnews();
-        //             console.log('REFRESHED');
-        //         },5000);
-
-        //         //setNewsItems
-        //     }
-        
-        //   } 
-    }
-
-    if( window.localStorage ){
-    if( !localStorage.getItem('firstLoad') ){
-      localStorage['firstLoad'] = true;
-      window.location.reload();
-    }  
-    else{
-        localStorage.removeItem('firstLoad');
-    }
-  }
+    setINITIALnews();
     
   
     refreshAccessToken();
     setTimeout(() => {  
-        callNEWS();
         access_token = window.sessionStorage.getItem('access_token');
         enable_newReleases(); }, 1000);
     // enable_newReleases();

@@ -1,6 +1,52 @@
 'use strict';
 
 function setINITIALnews(){    
+    
+    const arr=[]
+    function readTextFile(file)
+    {
+        console.log('a')
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function ()
+        {
+            if(rawFile.readyState === 4)
+            {
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var allText = rawFile.responseText;
+                    console.log(allText);
+                    arr.push(allText)
+                }
+            }
+        }
+        rawFile.send(null);
+    }
+
+    readTextFile("./inputNews.txt");
+    console.log(arr)
+    const myArray = arr[0].split("!@#$%");
+    console.log(myArray.length)
+    for(let i=0;i<myArray.length;i++){
+        console.log(myArray[i])
+        //console.log(myArray[i]["url"])
+    // console.log(myArray[i]["urlToImage"])
+    }
+    console.log("hello")
+    console.log(myArray)
+    const titlearr = []
+    const urlarr = []
+    const imagesarr = []
+    for(let i=0;i<myArray.length;i=i+3){
+    titlearr.push(myArray[i])
+    urlarr.push(myArray[i+1])
+    imagesarr.push(myArray[i+2])
+    }
+    console.log("heyyy")
+    console.log(titlearr)
+    console.log(urlarr)
+    console.log(imagesarr)
+    
     let api_key = "5ded574a864b45148274ffb0adc49f2c";
     console.log('APII')
     let curr_url = `https://newsapi.org/v2/everything?q=music&domains=billboard.com&language=en&apiKey=${api_key}`
