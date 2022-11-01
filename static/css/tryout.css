@@ -1,0 +1,57 @@
+ .feature-align-head
+{
+
+  position: relative;
+  top: 5rem;
+  padding-right: 70rem;
+} 
+
+.flex-align-Key
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right:24rem ;
+}
+.major-mode
+{
+    margin-left:2rem
+}
+.minor-mode
+{
+    margin-left: 8rem;
+}
+.mode-align-Key
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right:32rem ;
+}
+.mode-align-explicit
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right:32.8rem ;
+}
+.duration-input
+{
+    margin-left:8rem
+}
+.mode-align-duration
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right:30rem ;
+}
+
+.loudness-input
+{
+    margin-left:7rem
+}
+.tempo-input
+{
+    margin-left:10rem
+}

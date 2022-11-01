@@ -1,0 +1,33 @@
+.footer-btn{
+    margin-top: 2rem;
+    margin-left: 2rem;
+   
+}
+.footer-logo
+{
+    margin-right: 0.5rem;
+}
+.footer-para
+{
+    text-align: center;
+    margin-top: 1rem;
+    color: aliceblue;
+}
+#footer
+{
+    padding:30px 50px 0 50px;
+}
+#footer
+{
+    text-align: center;
+    background-color: #252525;
+    height: auto;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.socials-logo
+{
+    margin:20px 10px;
+    color: aliceblue;
+}

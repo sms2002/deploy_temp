@@ -29,7 +29,7 @@ var el2 = [];
 var text_label = [];
 for(let i=1; i<8; i++){
     text_label[i] = document.getElementById(`${i}`);
-    text_label[i].innerHTML = dict_key[i-1];
+    text_label[i].innerHTML = dict_key[i-1].toUpperCase();
     text_label[i].innerHTML = text_label[i].innerHTML.charAt(0).toUpperCase() + text_label[i].innerHTML.slice(1,);
     el1[i] = document.getElementById(`textTRY${i}`);
     el2[i] = document.getElementById(`rangeTRY${i}`);
@@ -172,5 +172,3 @@ function getRandomInt(min, max) {
   function getRandomFloat(min, max) {
     return Math.floor(Math.random() * (max*10 - min*10) + min*10)/10;
   }
-
-  console.log('Hey')

@@ -1,6 +1,3 @@
-body {
-    font-family: 'Roboto';font-size: 16px;
-}
 
 nav{
     font-size: medium;
@@ -113,13 +110,14 @@ a:hover, a:active {
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
+
 .Team {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 125vh;
+    width: 100%;
     background: linear-gradient(to right, #460b2d, #912847);
-    font-family: 'Quicksand', sans-serif;
 }
 
 .profile-card {
@@ -200,9 +198,28 @@ a:hover, a:active {
     top: -35px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
     .profile-card {
         margin-top: 45px;
+    }
+   .feature{
+    padding-top: 2rem;
+   }
+    
+    .Team
+    {
+        height:80rem;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+  
+}
+@media only screen and (max-width: 320px) {
+    .team-head
+    {
+        text-align: center;
     }
 }
 

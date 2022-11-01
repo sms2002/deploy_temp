@@ -12,11 +12,13 @@
         <link rel="stylesheet" href="../static/css/contact.css">
         <link rel="stylesheet" href="../static/css/navbar.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    {% endblock %}
+		<link rel="stylesheet" href="../static/css/fonts.css">
+		{% endblock %}
 
 {% block body %}
     <!-- <h1>Contact</h1> -->
-    <nav class="navbar">
+	<section class="fixed-navbar">
+    <nav class="navbar" >
 		<div class="container">
 	  
 		  <div class="navbar-header">
@@ -43,7 +45,7 @@
 		  </div>
 		</div>
 	  </nav>
-    
+    </section>
 
     
 
@@ -51,7 +53,7 @@
 		<section class="section-contact">
 			<div class="container">
 				<h1>Contact the team!</h1>
-				<p>Fill out the form below to get in touch with one of our team members.</p>
+				<p class="contact-para">Fill out the form below to get in touch with one of our team members.</p>
 
 				<form action="https://api.web3forms.com/submit" method="POST" id="form">
                     <input type="hidden" name="access_key" value="a2303a56-c75e-4f0c-8454-d0724ebdb330" />
@@ -81,7 +83,7 @@
 					</div>
 					<div class="form-group full">
 						<label for="message">What are you looking for?</label>
-						<textarea name="message" id="message" class="form-element" placeholder="Enter your message..."></textarea>
+						<textarea name="message" id="message" required class="form-element" placeholder="Enter your message..."></textarea>
 					</div>
 					<div class="submit-group">
 						<input type="submit" value="SEND MESSAGE" />

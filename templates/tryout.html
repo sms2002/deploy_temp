@@ -7,99 +7,182 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
         <link rel="stylesheet" href="../static/css/style.css">
         <link rel="stylesheet" href="../static/css/navbar.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
+        <link rel="stylesheet" href="../static/css/fonts.css">
+        <link rel="stylesheet" href="../static/css/footer.css">
+        <link rel="stylesheet" href="../static/css/tryout.css">
+        <script src="https://kit.fontawesome.com/8e1035864c.js" crossorigin="anonymous"></script>
+      </head>
 
 <body onload="onPageLoadReset()">
-  
-<nav class="navbar">
-  <div class="container">
-  
-    <div class="navbar-header">
-    <button class="navbar-toggler" data-toggle="open-navbar1">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-          <a class="image"  href="#">
-              <img src="../static/img/Daco_1145248.png" width="100" height="42" class="d-inline-block align-top" alt="">
-              </a>
-    <a href="/">
-      <h4>WV<span>FRM</span></h4>
-    </a>
-    </div>
-  
-    <div class="navbar-menu" id="open-navbar1">
-    <ul class="navbar-nav">
-      <li><a href="/">Home</a></li>
-                  <li><a href="/about">About</a></li>
-                  <li class="active"><a href="/tryout">TryOut</a></li>
-                  <li><a href="/contact">Contact</a></li>
-    </ul>
-    </div>
-  </div>
-  </nav>
-    
+  <section class="fixed-navbar">
+    <nav class="navbar">
+        <div class="container">
+      
+          <div class="navbar-header">
+            <button class="navbar-toggler" data-toggle="open-navbar1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a class="image"  href="#">
+                <img src="../static/img/Daco_1145248.png" width="100" height="42" class="d-inline-block align-top" alt="">
+                </a>
+            <a href="/">
+              <h4>WV<span>FRM</span></h4>
+            </a>
+          </div>
+      
+          <div class="navbar-menu" id="open-navbar1">
+            <ul class="navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li  class="active"><a href="/tryout">TryOut</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+  <br></br>
 
+    <h1 class="tryout-header">TryOut</h1>
 
-    <h1>TryOut</h1>
 
    
 
-    <div class="form-group mt-4 text-center">
-        <label id="1"><h4>Acousticness</h4></label>
+    <div class="form-group mt-4 text-center aligning-items">
+      <div class="feature-align-head">
+        <h4><label id="1">Acousticness</label></h4>
+      </div>
         <br>
+        <div class="feature-align-div">
+          <div>
+          <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY1">
+          </div>
+          <br>
+          <div>
         <input type="text" value="50" id="textTRY1">
-        <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY1">
+        </div>
+        
+        
+        </div>
     </div>
 
-    <div class="form-group mt-4 text-center">
-        <label id="2"><h4>Acousticness</h4></label>
+    <div class="form-group mt-4 text-center aligning-items">
+      <div class="feature-align-head">
+        <h4><label id="2">Acousticness</label></h4>
+      </div>
         <br>
+        <div class="feature-align-div">
+          <div>
+          <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY2">
+          </div>
+          <br>
+          <div>
         <input type="text" value="50" id="textTRY2">
-        <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY2">
+        </div>
+        
+        
+        </div>
     </div>
 
-    <div class="form-group mt-4 text-center">
-        <label id="3"><h4>Acousticness</h4></label>
+    <div class="form-group mt-4 text-center aligning-items">
+      <div class="feature-align-head">
+        <h4><label id="3">Acousticness</label></h4>
+      </div>
         <br>
+        <div class="feature-align-div">
+          <div>
+          <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY3">
+          </div>
+          <br>
+          <div>
         <input type="text" value="50" id="textTRY3">
-        <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY3">
+        </div>
+        
+        
+        </div>
     </div>
 
-    <div class="form-group mt-4 text-center">
-        <label id="4"><h4>Acousticness</h4></label>
+    <div class="form-group mt-4 text-center aligning-items">
+      <div class="feature-align-head">
+      <h4><label id="4">Acousticness</label></h4>
+      </div>
         <br>
+        <div class="feature-align-div">
+          <div>
+          <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY4">
+          </div>
+          <br>
+          <div>
         <input type="text" value="50" id="textTRY4">
-        <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY4">
+        </div>
+        
+        
+        </div>
     </div>
 
-    <div class="form-group mt-4 text-center">
-        <label id="5"><h4>Acousticness</h4></label>
+    <div class="form-group mt-4 text-center aligning-items">
+      <div class="feature-align-head">
+        <h4><label id="5">Acousticness</label></h4>
+      </div>
         <br>
+        <div class="feature-align-div">
+          <div>
+          <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY5">
+          </div>
+          <br>
+          <div>
         <input type="text" value="50" id="textTRY5">
-        <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY5">
+        </div>
+        
+        
+        </div>
     </div>
 
-    <div class="form-group mt-4 text-center">
-        <label id="6"><h4>Acousticness</h4></label>
+    <div class="form-group mt-4 text-center aligning-items">
+      <div class="feature-align-head">
+        <h4><label id="6">Acousticness</label></h4>
+      </div>
         <br>
+        <div class="feature-align-div">
+          <div>
+          <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY6">
+          </div>
+          <br>
+          <div>
         <input type="text" value="50" id="textTRY6">
-        <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY6">
+        </div>
+        
+        
+        </div>
     </div>
 
-    <div class="form-group mt-4 text-center">
-        <label id="7"><h4>Acousticness</h4></label>
+    <div class="form-group mt-4 text-center aligning-items">
+      <div class="feature-align-head">
+        <h4><label id="7">Acousticness</label></h4>
+      </div>
         <br>
+        <div class="feature-align-div">
+          <div>
+          <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY7">
+          </div>
+          <br>
+          <div>
         <input type="text" value="50" id="textTRY7">
-        <input type="range" min="0" max="100" step="0.2" value="50" style="width: 50%" id="rangeTRY7">
+        </div>
+        
+        
+        </div>
     </div>
-
-      <div>
-        <label id="6"><h4>Key</h4></label>
+      <br><br>
+      
+        <div class="flex-align-Key">
+        <label id="6"><h4>KEY</h4></label>
       <br>
       <form id="mainForm" name="mainForm">
         <input type="radio" name="rads" value="0"> 0 </input>
@@ -115,40 +198,49 @@
         <input type="radio" name="rads" value="10"> 10 </input>
         <input type="radio" name="rads" value="11"> 11 </input>
     </form>
+    
       </div>
 
 
     <br><br>
-      <label id="label_mode"><h4>Mode</h4></label>
+    <div class="mode-align-Key">
+      <label id="label_mode"><h4>MODE</h4></label>
       <br>
       <form id="mainForm1" name="mainForm1">
-        <input type="radio" name="mod" value="0" >Minor</input>
-        <input type="radio" name="mod" value="1" >Major</input>
-      </form>
-    <br><br>
 
-      <label id="label_exp"><h4>Explicit</h4></label>
+        <input type="radio" name="mod" value="0" class="minor-mode" >Minor</input>
+        <input type="radio" name="mod" value="1" class="major-mode">Major</input>
+      </form>
+      </div>
+    <br><br>
+    <div class="mode-align-explicit">
+      <label id="label_exp"><h4>EXPLICIT</h4></label>
       <br>
     <form id="mainForm2" name="mainForm2">
-      <input type="radio" name="exp" value="0" >False</input>
-      <input type="radio" name="exp" value="1" >True</input>
+      <input type="radio" name="exp" value="0"class="minor-mode" >False</input>
+      <input type="radio" name="exp" value="1"class="major-mode" >True</input>
+    </div>
       <br><br>
   </form>
 
     <div id="last3">
-      <label id="last1"><h4>Duration</h4></label>
+      <div class="mode-align-duration">
+      <label id="last1"><h4>DURATION</h4></label>
       <br>
-      <input placeholder="time in milliseconds" required="" type="text" id="l1" value=""></input>
+      <input placeholder="time in milliseconds" required="" type="text" id="l1" value="" class="duration-input"></input>
+    </div>
       <br>
-
-      <label id="last2"><h4>Loudness</h4></label>
+      <div class="mode-align-duration">
+      <label id="last2"><h4>LOUDNESS</h4></label>
       <br>
-      <input placeholder="loudness" type="text" id="l2" value=""></input>
+      <input placeholder="loudness" type="text" id="l2" value=""class="loudness-input"></input>
+    </div>
       <br>
-
-      <label id="last3"><h4>Tempo</h4></label>
+      <div class="mode-align-duration">
+      <label id="last3"><h4>TEMPO</h4></label>
       <br>
-      <input placeholder="tempo" type="text" id="l3" value=""></input>
+      <input placeholder="tempo" type="text" id="l3" value=""class="tempo-input"></input>
+    </div>
       <br>
     </div>
 
@@ -159,8 +251,16 @@
         <button type="button" class="btn btn-secondary btn-lg" id="b3_RANDOM">RANDOM</button>
     </div>
 
-    <br><br>
+    <footer id="footer">
+      <a href="./contact">
+      <i class="fa-solid fa-envelope socials-logo"></i>
+      </a>
+      <p class="footer-para">© Copyright WAVEFORM</p>
+  
+  </footer>
 
+    
     <script src="../static/js/tryout.js"></script>
     <script src="../static/js/navbar.js"></script>
+    
 </body>

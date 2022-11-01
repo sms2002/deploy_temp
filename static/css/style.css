@@ -28,7 +28,7 @@ section {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: '',sans-serif;
 }
 
 /* body{
@@ -144,6 +144,11 @@ color: white;
 text-align: center;
 line-height:90vh;
 }
+/* stat head */
+.stat-head
+{
+  margin-top: 3rem;
+}
 
 @keyframes fadeIn {
   to
@@ -162,4 +167,10 @@ line-height:90vh;
 {
   opacity: 0;
   animation: fadeOut 2s;
+}
+
+.tryout-header
+{
+  text-align: center;
+  margin-top: 5rem;
 }
