@@ -115,7 +115,7 @@ a:hover, a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 125vh;
+    height: 75vh;
     width: 100%;
     background: linear-gradient(to right, #460b2d, #912847);
 }

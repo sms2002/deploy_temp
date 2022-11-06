@@ -1,34 +1,10 @@
-/* body{
-    overflow-x: hidden;
-}
-h1 {
-    text-align: center;
-}
 
-h3 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-div {
-    text-align: center;
-}
-
-section {
-    text-align: center;
-} */
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: '',sans-serif;
+  font-family: 'Open-Sans',sans-serif;
 }
 
 /* body{
@@ -147,7 +123,7 @@ line-height:90vh;
 /* stat head */
 .stat-head
 {
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
 
 @keyframes fadeIn {
@@ -174,3 +150,22 @@ line-height:90vh;
   text-align: center;
   margin-top: 5rem;
 }
+/* card padding */
+.card-padding
+{
+  padding-bottom: 3rem;
+}
+.new-backround
+{
+  background-color: black;
+}
+.new-text
+{
+  color: #fff;
+}
+/* .index-head
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 20rem;
+} */

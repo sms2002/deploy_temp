@@ -4,9 +4,11 @@
     <title>Audio</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="../static/css/audio.css">
     <link rel="stylesheet" href="../static/css/navbar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="../static/css/fonts.css">
     <link rel="stylesheet" href="../static/css/footer.css">
     <script src="https://kit.fontawesome.com/8e1035864c.js" crossorigin="anonymous"></script>
@@ -35,8 +37,9 @@
         <div class="navbar-menu" id="open-navbar1">
         <ul class="navbar-nav">
           <li class="active"><a href="/">Home</a></li>
+          <li><a href="/tryout">Tryout</a></li>
                   <li><a href="/about">About</a></li>
-                  <li><a href="/tryout">TryOut</a></li>
+                  
                   <li><a href="/contact">Contact</a></li>
         </ul>
         </div>
@@ -45,12 +48,10 @@
       </section>
       
   
-      
+    <div class="audio-items">
     <h2>{{displayName}}</h2>
-    <h2>{{trkID}}</h2>
-    <h2>{{trkPop}}</h2>
     <!-- <h2>https://open.spotify.com/embed/track/{{trkID}}?utm_source=generator</h2> -->
-
+      <br><br>
     
     <iframe style="border-radius:12px" 
     src = "https://open.spotify.com/embed/track/{{trkID}}?utm_source=generator"
@@ -63,27 +64,29 @@
     clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
     loading="lazy">
     </iframe>
+  
 
 
     <br><br><br>
-    <div>
+    <div class="audio-button">
         <form action="/stat" method="POST">
         <input type="hidden" name="hoo" value="" id="hoo" />
         <input class="btn" type="submit" value="PREDICT">
         </form>
     </div>
+  </div>
     <br><br><br>
 <!-- -------------------------------------------------------------------------------------------------------------- -->
-    <section id="new_release">
+    <section id="new_release" class="align-items-similar">
         <div class="heading">
-            <h1 >Similar Songs</h1>
+            <h1 class="head-audio">Similar Songs</h1>
         </div>
-        
+        <div style="height: 50px; background-color: #000000;line-height: 0%;"></div>
     <div class="card-deck">
         <div class="row">
           
            <!-- card 0 -->
-        <div class="col-12 col-md-6 col-lg-2" id="card0">
+        <div class="col-12 col-md-6 col-lg-2 d-flex align-items-stretch" id="card0">
           <div class="card">
             <a href="">
             <img class="card-img-top" src="..." alt="Card image cap">
@@ -92,13 +95,10 @@
               <h5 class="card-title">TrackName</h5>
               <p class="card-text">ArtistName</p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted"></small>
-            </div>
             </div>
           </div>
             <!-- card 1 -->
-        <div class="col-12 col-md-6 col-lg-2" id="card1">
+        <div class="col-12 col-md-6 col-lg-2 d-flex align-items-stretch" id="card1">
         <div class="card">
           <a href="">
           <img class="card-img-top" src="..." alt="Card image cap">
@@ -107,13 +107,10 @@
             <h5 class="card-title">TrackName</h5>
             <p class="card-text">ArtistName</p>
           </div>
-          <div class="card-footer">
-            <small class="text-muted"></small>
-          </div>
           </div>
         </div>
             <!-- card 2 -->
-            <div class="col-12 col-md-6 col-lg-2" id="card2">
+            <div class="col-12 col-md-6 col-lg-2 d-flex align-items-stretch" id="card2">
               <div class="card">
                 <a href="">
                 <img class="card-img-top" src="..." alt="Card image cap">
@@ -122,13 +119,10 @@
                   <h5 class="card-title">TrackName</h5>
                   <p class="card-text">ArtistName</p>
                 </div>
-                <div class="card-footer">
-                  <small class="text-muted"></small>
-                </div>
                 </div>
               </div>
         <!-- card 3 -->
-        <div class="col-12 col-md-6 col-lg-2" id="card3">
+        <div class="col-12 col-md-6 col-lg-2 d-flex align-items-stretch" id="card3">
           <div class="card">
             <a href="">
             <img class="card-img-top" src="..." alt="Card image cap">
@@ -137,13 +131,10 @@
               <h5 class="card-title">TrackName</h5>
               <p class="card-text">ArtistName</p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted"></small>
-            </div>
             </div>
           </div>     
         <!-- card 4 -->
-        <div class="col-12 col-md-6 col-lg-2" id="card4">
+        <div class="col-12 col-md-6 col-lg-2 d-flex align-items-stretch" id="card4">
             <div class="card">
               <a href="">
               <img class="card-img-top" src="..." alt="Card image cap">
@@ -151,14 +142,11 @@
               <div class="card-body">
                 <h5 class="card-title">TrackName</h5>
                 <p class="card-text">ArtistName</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted"></small>
               </div>
               </div>
             </div>   
         <!-- card 5 -->
-        <div class="col-12 col-md-6 col-lg-2" id="card5">
+        <div class="col-12 col-md-6 col-lg-2 d-flex align-items-stretch" id="card5">
             <div class="card">
               <a href="">
               <img class="card-img-top" src="..." alt="Card image cap">
@@ -166,9 +154,6 @@
               <div class="card-body">
                 <h5 class="card-title">TrackName</h5>
                 <p class="card-text">ArtistName</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted"></small>
               </div>
               </div>
             </div>  
@@ -176,12 +161,25 @@
         </div>
         </div>
         </section>
-        <footer id="footer">
-          <a href="./contact">
-          <i class="fa-solid fa-envelope socials-logo"></i>
-          </a>
-          <p class="footer-para">© Copyright WAVEFORM</p>
+        <div style="height: 10px; background-color: #000000"></div>
+        <footer class="site-footer">
       
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+             <a href="#">Waveform</a>.
+                </p>
+              </div>
+      
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                  <li><a class="facebook" href="#"><i class="fa fa-github"></i></a></li>         
+                  <li><a class="linkedin" href="#"><i class="fa fa-envelope"></i></a></li>   
+                </ul>
+              </div>
+            </div>
+          </div>
       </footer>
         <script src="../static/js/navbar.js"></script>
     <script src="../static/js/audio.js"></script>

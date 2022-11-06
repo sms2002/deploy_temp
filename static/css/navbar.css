@@ -2,12 +2,19 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
   }
   
-  body {
+  html,body {
     font-family: 'Open-Sans',sans-serif;
     font-weight: 300;
     font-size: 0.925rem;
+    overflow-x:hidden; 
+    /* height: 100%;
+    width: 100%; */
+    margin: 0%;
+    padding: 0%;
+
   }
   
   a {
