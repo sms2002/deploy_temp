@@ -455,7 +455,7 @@ async function enable_IMGurl(trackID)
     console.log(jsondata);
     console.log(jsondata["album"]["images"]);
     console.log(jsondata["album"]["images"][2]["url"]);
-    localStorage.setItem('IMGurl',jsondata["album"]["images"][2]["url"]);
+    localStorage.setItem('IMGurl',jsondata["album"]["images"][1]["url"]);
 }
 
 enable_IMGurl(localStorage.getItem('trackID'));
